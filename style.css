@@ -29,7 +29,7 @@ time, mark, audio, video {
 /* SIDEBAR STYLES
 -------------------------------------------------- */
 #wrapper{
-    max-width:1600px;
+    max-width:1920px;
     width: 90%;
     margin: 0 auto;
     margin: 2% auto;
@@ -317,11 +317,11 @@ header {
     color: black;
 }
 
-.home .banner {
+.home #banner {
     padding: 50px 0;
 }
 
-.inner-page .banner {
+.inner-page #banner {
     height: 100px;
 }
 
@@ -359,7 +359,6 @@ header {
 
 main {
     width: 64%;
-    padding: 20px;
     float: left;
 }
 
@@ -419,14 +418,6 @@ ul {
 
 /* HORIZONTAL NAV 
 -------------------------------------------------- */
-ul li {
-    margin: 6px 0;
-    display:inline;
-}
-
-ul li li {
-    margin-left: 20px;
-}
 
 
 /* FOOTER 
@@ -483,19 +474,19 @@ figure {
 /* images from
 https://www.toptal.com/designers/subtlepatterns/ */
 
-.home .banner, .home footer {
+.home #banner, .home footer {
     background-color: hotpink;
     background-image: url(https://www.christianpatton.com/it270/portfolio2/wp-content/themes/html5blank-stable/img/strawberries.png);
     background-repeat: repeat;
 }
 
-.overview .banner, .overview footer {
+.overview #banner, .overview footer {
     background-color: hotpink;
     background-image: url(https://www.christianpatton.com/it270/portfolio2/wp-content/themes/html5blank-stable/img/strawberries.png);
     background-repeat: repeat;
 }
 
-.blog .banner, .blog footer {
+.blog #banner, .blog footer {
     background-color: hotpink;
     background-image: url(https://www.christianpatton.com/it270/portfolio2/wp-content/themes/html5blank-stable/img/strawberries.png);
     background-repeat: repeat;
@@ -554,40 +545,6 @@ https://www.toptal.com/designers/subtlepatterns/ */
 
 .blog .icon-c:hover {
     color: royalblue;
-}
-
-.topnav {
-    overflow: hidden;
-    /* background-color: #333; */
-}
-
-.topnav a {
-    float: left;
-    display: block;
-    /* color: #f2f2f2; */
-    text-align: center;
-    /* padding: 14px 16px; */
-    /* text-decoration: none; */
-    /* font-size: 17px; */
-}
-
-.topnav a:hover {
-    display:block;
-/* background-color: #ddd; */
-/* color: black; */
-}
-
-.topnav a.active {
-/* background-color: #4CAF50; */
-/* color: white; */
-}
-
-.topnav .icon {
-    display: none;
-}
-
-.topnav .title-link {
-    display: none;
 }
 
 /* MOBILE MEDIA QUERIES
