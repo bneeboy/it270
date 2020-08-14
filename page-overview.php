@@ -28,5 +28,5 @@ get_header(); ?>
 	<aside class="sidebar">
 		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('info-sidebar')) ?>
         </aside>
-
 <?php get_footer(); ?>
+    

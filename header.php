@@ -24,8 +24,7 @@
         <script src="https://www.christianpatton.com/it270/portfolio2/wp-content/themes/html5blank-stable/js/nav.js"></script>
     </head>
     <body <?php body_class( !is_home() && ! is_front_page() ? "inner-page" : "" ); ?>></body>
-    
-        <div class="container">            
+               
 
             <header>
                 
@@ -44,16 +43,10 @@
                     </nav> -->
 
                     <!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
-                    <nav>
+                    					<nav class="nav" role="navigation">
                         <button class="nav-button">Toggle Navigation</button>
-                        <ul class="primary-nav">
-                            <li class="nav-home"><a href="https://www.christianpatton.com/it270/portfolio2/">Home</a></li>
-                            <li class="parent"><a href="https://www.christianpatton.com/it270/portfolio2/Overview">Overview</a>
-                                <ul class="dropdown">
-                                    <li><a href="https://www.christianpatton.com/it270/portfolio2/blog">Blog</a></li>
-                                </ul></li>
-                        </ul>
-                    </nav>
+						<?php html5blank_nav(); ?>
+					</nav>
 
                 </div>
 

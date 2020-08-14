@@ -1,14 +1,6 @@
 <?php get_header(); ?>
 
 
-<div id="hero">
-
-
-</div>
-
-<!-- wrapper -->
-		<div class="wrapper">
-
 	<main role="main">
 		<!-- section -->
 		<section>

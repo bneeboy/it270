@@ -29,10 +29,8 @@ time, mark, audio, video {
 /* SIDEBAR STYLES
 -------------------------------------------------- */
 #wrapper{
-    max-width:1920px;
-    width: 90%;
+    max-width:1100px;
     margin: 0 auto;
-    margin: 2% auto;
 }
 
 .home .sidebar {
@@ -109,8 +107,6 @@ table {
 }
 
 * {
-    margin-right: auto;
-    margin-left: auto;
     padding: 0px;
     box-sizing: border-box;
 }
@@ -130,6 +126,15 @@ body {
     font-size: 1rem;
 }
 
+h1, h3, h4, h5, h6 {
+    font-family: Bookman, serif;
+    line-height: 2;
+}
+
+h2{
+    font-family: Bookman, serif;
+}
+/*
 .container {
     min-height: 100vh;
     display: grid;
@@ -145,7 +150,7 @@ body {
 
     gap: 0;    
 }
-
+*/
 .border {
     height: 20px;    
 }
@@ -156,7 +161,7 @@ body {
     max-width: 1280px;
 }
 
-h1, h2, h3, h4, h5, h6, h8 {
+h1, h2, h3, h4, h5, h6, {
     font-family: Bookman, serif;
     margin: 16px 0 12px;
 }
@@ -177,7 +182,7 @@ h3 {
     font-size: 1.5rem;
 }
 
-h4, h5, h6 {
+h4, h5, {
     font-size: 1rem;
     font-weight: bold;
 }
@@ -250,7 +255,7 @@ nav li:hover .dropdown a:hover {
     background-color: lightpink;
 }
 
-.home h8 {
+.home h6 {
     font-size: 3rem;
     font-weight: bold;
 }
@@ -259,7 +264,7 @@ nav li:hover .dropdown a:hover {
     display:none;
 }
 
-.overview h8 {
+.overview h6 {
     font-size: 3rem;
     font-weight: bold;
 }
@@ -268,7 +273,7 @@ nav li:hover .dropdown a:hover {
     display:none;
 }
 
-.blog h8 {
+.blog h6 {
     font-size: 3rem;
     font-weight: bold;
 }
@@ -359,7 +364,9 @@ header {
 
 main {
     width: 64%;
+    padding: 20px;
     float: left;
+    background: lightpink;
 }
 
 aside {
@@ -405,13 +412,13 @@ figcaption {
     height: 1px;
     background: linear-gradient(to right, rgba(0,0,0, 0), #A83F85, rgba(0,0,0, 0));
 }
-
+/*
 .content a {
     display: inline-block;
     padding: 1px;
     text-decoration: none;
 }
-
+*/
 ul {
     margin-bottom: 12px;
 }

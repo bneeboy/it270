@@ -10,9 +10,9 @@
 
                     <h5>Headline Five</h5>
 
-                    <h6>Headline Six</h6>
+                    <h5>Headline Six</h5>
                     <p>
                         Adipiscing <a href="https://www.cnn.com/">elit duis tristique</a> sollicitudin nibh sit. Cras ornare arcu dui vivamus arcu felis bibendum ut. Augue neque gravida in fermentum et. Integer enim neque volutpat ac. Tortor consequat id porta nibh venenatis. Aliquam malesuada bibendum arcu vitae elementum curabitur. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Ornare suspendisse sed nisi lacus.
                     </p>
 
-                </aside>
+                </aside>    
