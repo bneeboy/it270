@@ -723,13 +723,23 @@ https://www.toptal.com/designers/subtlepatterns/ */
     aside {
         width: 100%;
     }
+    
+    .sidebar {
+        
+        width:100%;
+        
+    }
 
-    .logged-in main {
+    .overview main {
         width: 100%;
     }
     
-    .logged-in aside {
+    .overview aside {
         width: 100%;
+    }
+    
+    .overview .sidebar {
+        width:100%;
     }
 }
 
