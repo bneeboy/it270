@@ -1,14 +1,18 @@
-<?php get_header(); ?>
+<?php 
+/*
+Template name: Posts
+*/
+get_header(); ?>
 
 
 <!-- wrapper -->
+        <div class="wrapper">
 
 	<main role="main">
 		<!-- section -->
 		<section>
 
 			<h1><?php _e( 'Milknose\'s Latest Posts', 'html5blank' ); ?></h1>
-            <hr>
 
 			<?php get_template_part('loop'); ?>
 

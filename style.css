@@ -26,11 +26,186 @@ time, mark, audio, video {
 	font-size: 100%;
 	vertical-align: baseline;
 }
+
+button#wpforms-submit-213.wpforms-submit {
+    background-color:hotpink;
+    border: 1px solid black;
+    
+}
+
+button#wpforms-submit-213.wpforms-submit:hover {
+    background-color:pink;
+    color:white;
+    border: 1px solid white;
+    
+}
+
+.nav-button { display: none; } /* hide the navigation button by default */
+
+.main-navigation {
+    float:right;
+}
+.main-navigation li {
+    float: left;
+    margin-left:15px;
+    position:relative;
+}
+.sub-menu {
+    display: none;
+}
+.main-navigation li:hover .sub-menu {
+    display: block;
+    background: white;
+    position: absolute;
+    left:16px;
+}
+.main-navigation li:hover .sub-menu li {
+    margin-left:0;
+}
+@media only screen and (max-width: 700px) {
+
+	/* Navigation Button
+	-------------------------------------------------------- */
+
+	.nav-button {
+		display: block;
+		position: absolute;
+		top: 7px;
+		left: 7px;
+		width: 50px;
+		height: 35px;
+		background: url('https://www.christianpatton.com/it270/portfolio2/wp-content/themes/html5blank-stable/images/menu-icon-large.png'), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+		cursor: pointer;
+		border: 0 none;
+		border-bottom: 1px solid rgba(255,255,255,.1);
+		box-shadow: 0 0 4px rgba(0,0,0,.7) inset;
+		border-radius: 5px;
+		z-index: 999;
+		text-indent: -9999px;
+	}
+	.nav-button:hover {
+		background-color: rgba(0,0,0,.1);
+	}
+	.nav-button.open {
+		background: url('https://www.christianpatton.com/it270/portfolio2/wp-content/themes/html5blank-stable/images/close-icon-large.png'), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+	}
+
+	/* Navigation Bar
+	-------------------------------------------------------- */
+    .main-navigation li:hover .sub-menu {
+    background: none;
+    position: static;
+    top:0px;
+}
+    .main-navigation li:hover .sub-menu li {
+    padding:0px;
+}
+    .sub-menu {
+    display: block;
+}
+    .main-navigation li {
+    float:none;
+    margin-left:0;
+    }
+
+	body { padding-top: 50px; }
+
+	.primary-nav {
+		width: 100%;
+		float: none;
+		background-color: hotpink; /* change the menu color */
+		background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		display: block;
+		height: 50px;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		box-shadow: 0 1px 2px rgba(0,0,0,.6);
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 998;
+		clear: both;
+	}
+	.primary-nav li {
+		display: none;
+		width: 100%;
+		font-family: Arial;
+	}
+	.primary-nav li a {
+		display: block;
+		width: 100%;
+		padding: 10px 5%;
+		font-size: 14px;
+		font-weight: bold;
+		text-shadow: -1px -1px 0 rgba(0,0,0,.15);
+		color: white;
+		text-decoration: none;
+		border-bottom: 1px solid rgba(0,0,0,.2);
+		border-top: 1px solid rgba(255,255,255,.1);
+	}
+	.primary-nav li a:hover {
+		background-color: rgba(0,0,0,.5);
+		border-top-color: transparent;
+	}
+	.primary-nav > li:first-child {
+		border-top: 1px solid rgba(0,0,0,.2);
+	}
+
+	/* Toggle the navigation bar open  */
+
+	.primary-nav.open {
+		height: auto;
+		padding-top: 50px;
+	}
+	.primary-nav.open li {
+		display: block;
+	}
+
+	/* Submenus – optional .parent class indicates dropdowns */
+
+	.primary-nav > li:hover > a {
+		background: rgba(0,0,0,.5);
+		border-bottom-color: transparent;
+	}
+	.primary-nav li.parent > a:after {
+		content: "▼";
+		color: rgba(255,255,255,.5);
+		float: right;
+	}
+	.primary-nav li.parent > a:hover {
+		background: rgba(0,0,0,.75);
+	}
+	.primary-nav li ul {
+		display: none;
+		background: rgba(0,0,0,.5);
+		border-top: 0 none;
+		padding: 0;
+	}
+	.primary-nav li ul a {
+		border: 0 none;
+		font-size: 12px;
+		padding: 10px 5%;
+		font-weight: normal;
+	}
+	.primary-nav li:hover ul {
+		display: block;
+		border-top: 0 none;
+	}
+
+} /* End Mobile Styles */
 /* SIDEBAR STYLES
 -------------------------------------------------- */
 #wrapper{
     max-width:1100px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .home .sidebar {
@@ -52,7 +227,7 @@ width:35%;
 	padding: 30px;
 }
 
-.blog .sidebar,
+.logged-in .sidebar,
 .author .sidebar,
 .archive .sidebar,
 .single .sidebar{
@@ -127,12 +302,12 @@ body {
 }
 
 h1, h3, h4, h5, h6 {
-    font-family: Bookman, serif;
-    line-height: 2;
+    font-family: Roboto, sans-serif;
+    line-height: 2.5rem;
 }
 
 h2{
-    font-family: Bookman, serif;
+    font-family: Roboto, sans-serif;
 }
 /*
 .container {
@@ -161,30 +336,45 @@ h2{
     max-width: 1280px;
 }
 
-h1, h2, h3, h4, h5, h6, {
-    font-family: Bookman, serif;
-    margin: 16px 0 12px;
-}
-
 h1:first-child, h2:first-child {
     margin-top: 0;
 }
 
 h1 {
     font-size: 3rem;
+    font-family: Roboto, sans-serif;
+    margin: 16px 0 12px;
 }
 
 h2 {
     font-size: 2rem;
+    font-family: Roboto, sans-serif;
+    margin: 16px 0 12px;
 }
 
 h3 {
     font-size: 1.5rem;
+    font-family: Roboto, sans-serif;
+    margin: 16px 0 12px;
 }
 
-h4, h5, {
+h4 {
     font-size: 1rem;
     font-weight: bold;
+    font-family: Roboto, sans-serif;
+    margin: 16px 0 12px;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+    margin: 16px 0 12px;
+}
+
+h6 {
+    font-family: Roboto, sans-serif;
+    margin: 16px 0 12px;
 }
 
 .hide {
@@ -220,37 +410,6 @@ nav a {
     color: black;
 }
 
-nav a:hover {
-    background-color: white;
-}
-
-nav li {
-    display: inline-block;
-}
-
-.dropdown {
-    display: none;
-}
-
-.dropdown li {
-    display: inline;
-}
-
-nav li:hover .dropdown {
-    width: 10rem;
-    display: block;
-    position: absolute;
-    background-color: white;
-    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, .33);
-    text-align: center;
-    align-content: center;
-    /* h-offset, v-offset, blur, spread (size), color */
-}
-
-nav li:hover .dropdown a {
-    width: 100%;
-}
-
 nav li:hover .dropdown a:hover {
     background-color: lightpink;
 }
@@ -273,13 +432,18 @@ nav li:hover .dropdown a:hover {
     display:none;
 }
 
-.blog h6 {
+.about h6 {
     font-size: 3rem;
     font-weight: bold;
 }
 
-.blog h1 {
+.about h1 {
     display:none;
+}
+
+.logged-in h6 {
+    font-size: 3rem;
+    font-weight: bold;
 }
 header {
     position: sticky;
@@ -310,7 +474,7 @@ header {
 }
 
 .title-bar, nav {
-    font-family: Bookman, serif;
+    font-family: Roboto, sans-serif;
     font-size: 1.5rem;
     font-variant: small-caps;
 }
@@ -323,6 +487,9 @@ header {
 }
 
 .home #banner {
+    padding: 50px 0;
+}
+.logged-in #banner {
     padding: 50px 0;
 }
 
@@ -374,14 +541,6 @@ aside {
     border: 1px solid #666;
 	padding: 20px;
     float: right;
-}
-
-.blog main {
-    width: 75%;
-}
-
-.blog aside {
-    width: 25%;
 }
 
 p {
@@ -481,19 +640,14 @@ figure {
 /* images from
 https://www.toptal.com/designers/subtlepatterns/ */
 
-.home #banner, .home footer {
-    background-color: hotpink;
-    background-image: url(https://www.christianpatton.com/it270/portfolio2/wp-content/themes/html5blank-stable/img/strawberries.png);
-    background-repeat: repeat;
+.home #banner img{
+    display:block;
+}
+#banner img{
+    display:none;
 }
 
-.overview #banner, .overview footer {
-    background-color: hotpink;
-    background-image: url(https://www.christianpatton.com/it270/portfolio2/wp-content/themes/html5blank-stable/img/strawberries.png);
-    background-repeat: repeat;
-}
-
-.blog #banner, .blog footer {
+#banner, footer {
     background-color: hotpink;
     background-image: url(https://www.christianpatton.com/it270/portfolio2/wp-content/themes/html5blank-stable/img/strawberries.png);
     background-repeat: repeat;
@@ -557,7 +711,7 @@ https://www.toptal.com/designers/subtlepatterns/ */
 /* MOBILE MEDIA QUERIES
 -------------------------------------------------- */
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 700px) {
     .content {
         flex-direction: column;
     }
@@ -570,17 +724,17 @@ https://www.toptal.com/designers/subtlepatterns/ */
         width: 100%;
     }
 
-    .blog main {
+    .logged-in main {
         width: 100%;
     }
     
-    .blog aside {
+    .logged-in aside {
         width: 100%;
     }
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .title-bar a, nav a {
         padding: 12px;
     }
@@ -608,7 +762,7 @@ https://www.toptal.com/designers/subtlepatterns/ */
     }
 }
   
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .topnav.responsive {
         position: relative;
     }
@@ -626,7 +780,7 @@ https://www.toptal.com/designers/subtlepatterns/ */
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     html {
         font-size: 14px;
     }

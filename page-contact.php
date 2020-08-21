@@ -24,10 +24,9 @@ get_header(); ?>
 			<!-- /article -->
 		<?php endif; ?>
 	</main>
-
 	<aside class="sidebar">
-		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('info-sidebar')) ?>
         		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('milknose-gallery')) ?>
+                <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('milknose-media')) ?>
         </aside>
 <?php get_footer(); ?>
     

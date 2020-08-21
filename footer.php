@@ -1,5 +1,5 @@
 </div> 
-</div><!-- end content -->           
+<!-- end content -->           
 <footer>
 
                 <div class="footer-inner">
@@ -19,9 +19,17 @@
             
             <div class="border"></div>
 
-</div> <!-- end container -->
+ <!-- end container -->
 
 <?php wp_footer();?>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$(".nav-button").click(function () {
+			$(".nav-button,.primary-nav").toggleClass("open");
+			});    
+		});
+		</script>
     </body>
     
 </html>

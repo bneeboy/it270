@@ -1,6 +1,6 @@
 <?php 
 /*
-Template name: Overview
+Template name: Front Page
 */
 get_header(); ?>
 	<main>
@@ -25,9 +25,8 @@ get_header(); ?>
 		<?php endif; ?>
 	</main>
 
-	<aside class="sidebar">
-		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('info-sidebar')) ?>
-        		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('milknose-gallery')) ?>
-        </aside>
+<?php get_sidebar(); ?>
+<aside><?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('milknose-media')) ?></aside>
+
 <?php get_footer(); ?>
     
